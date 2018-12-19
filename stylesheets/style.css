@@ -1,0 +1,172 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 70px;
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
+}
+
+.social-buttons {
+  margin: 20px 0;
+}
+
+.social-button {
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.section-container {
+  width: 100%;
+  min-height: 500px;
+  background-color: #f2f2f2;
+}
+
+.section-container section {
+  display: none;
+  width: 100%;
+  min-height: 500px;
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+
+.section-container section.active {
+  display: flex;
+}
+
+.section-container section .details {
+  position: relative;
+}
+
+.previous-page,
+.next-page {
+  position: absolute;
+  bottom: 10px;
+  border: 0;
+  background: transparent;
+  color: #cdcdcd;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.previous-page {
+  left: 15px;
+  background: url('../images/previous_page_arrow.svg') center left no-repeat;
+  padding-left: 30px;
+}
+
+.next-page {
+  right: 15px;
+  background: url('../images/next_page_arrow.svg') center right no-repeat;
+  padding-right: 30px;
+}
+
+section > img,
+.details {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section p {
+  display: flex;
+  align-items: center;
+}
+
+section p strong {
+  padding-left: 5px;
+}
+
+section span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  border-radius: 5px;
+}
+
+section span.blue {
+  background-color: #004272;
+}
+
+section span.orange {
+  background-color: #ff9400;
+}
+
+section span.green {
+  background-color: #00943d;
+}
+
+section span.purple {
+  background-color: #752a95;
+}
+
+section span.light-green {
+  background-color: #6bc729;
+}
+
+section span.gray {
+  background-color: #b4b4b4;
+}
+
+section span.dark-gray {
+  background-color: #666666;
+}
+
+section span.red {
+  background-color: #f13616;
+}
+
+section span.yellow {
+  background-color: #ffb22a;
+}
+
+@media (max-width: 1200px) {
+  .section-container section {
+    position: relative;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+
+  section.inline {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  section img,
+  section .details {
+    width: 100%;
+  }
+
+  .section-container section .details {
+    position: static;
+  }
+}
