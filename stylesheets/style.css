@@ -41,6 +41,10 @@ h2 {
   padding: 0;
 }
 
+.hero p {
+  max-width: 600px;
+}
+
 .section-container {
   width: 100%;
   min-height: 500px;
