@@ -27,11 +27,11 @@ h2 {
   font-weight: bold;
 }
 
-.social-buttons {
+.hero .social-buttons {
   margin: 20px 0;
 }
 
-.social-button {
+.hero .social-button {
   height: 30px;
   width: 30px;
   margin-left: 5px;
