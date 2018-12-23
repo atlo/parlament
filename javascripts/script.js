@@ -28,3 +28,5 @@ function previousPage () {
 
 $('.next-page').click(nextPage)
 $('.previous-page').click(previousPage)
+$('section').on('swipeleft', nextPage)
+$('section').on('swipeleft', previousPage)
