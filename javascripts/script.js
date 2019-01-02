@@ -40,7 +40,8 @@ $('.slider-1').slick({
   arrows: false,
   fade: true,
   asNavFor: '.slider-2',
-  infinite: false
+  infinite: false,
+  adaptiveHeight: true
 })
 
 $('.slider-2').slick({
@@ -49,6 +50,7 @@ $('.slider-2').slick({
   asNavFor: '.slider-1',
   infinite: false,
   nextArrow: '<button type="button" class="slick-next">tovább</button>',
-  prevArrow: '<button type="button" class="slick-prev">vissza</button>'
+  prevArrow: '<button type="button" class="slick-prev">vissza</button>',
+  adaptiveHeight: true
 })
 
