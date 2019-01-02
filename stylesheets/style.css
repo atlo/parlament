@@ -10,6 +10,10 @@ body {
   padding-top: 70px;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   width: 95%;
   max-width: 1200px;
@@ -67,8 +71,8 @@ h2 {
   position: relative;
 }
 
-.previous-page,
-.next-page {
+.slick-prev,
+.slick-next {
   position: absolute;
   bottom: 10px;
   border: 0;
@@ -81,35 +85,38 @@ h2 {
   padding: 10px;
 }
 
-.previous-page {
+.slick-prev {
   left: 15px;
   background: url('../images/previous_page_arrow.svg') center left no-repeat;
   padding-left: 30px;
 }
 
-.next-page {
+.slick-next {
   right: 15px;
   background: url('../images/next_page_arrow.svg') center right no-repeat;
   padding-right: 30px;
 }
 
-section > img,
-.details {
+.slick-disabled {
+  display: none !important;
+}
+
+.parlament-slider {
   width: 50%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-section p {
+/* .parlament-slider p {
   display: flex;
   align-items: center;
-}
+} */
 
-section p strong {
+.parlament-slider p strong {
   padding-left: 5px;
 }
 
-section span {
+.parlament-slider span {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -117,39 +124,39 @@ section span {
   border-radius: 5px;
 }
 
-section span.blue {
+.parlament-slider span.blue {
   background-color: #004272;
 }
 
-section span.orange {
+.parlament-slider span.orange {
   background-color: #ff9400;
 }
 
-section span.green {
+.parlament-slider span.green {
   background-color: #00943d;
 }
 
-section span.purple {
+.parlament-slider span.purple {
   background-color: #752a95;
 }
 
-section span.light-green {
+.parlament-slider span.light-green {
   background-color: #6bc729;
 }
 
-section span.gray {
+.parlament-slider span.gray {
   background-color: #b4b4b4;
 }
 
-section span.dark-gray {
+.parlament-slider span.dark-gray {
   background-color: #666666;
 }
 
-section span.red {
+.parlament-slider span.red {
   background-color: #f13616;
 }
 
-section span.yellow {
+.parlament-slider span.yellow {
   background-color: #ffb22a;
 }
 
@@ -168,24 +175,32 @@ footer img {
   width: 100px;
 }
 
+.footer-inline a {
+  display: inline-block;
+}
+
 @media (max-width: 1200px) {
-  .section-container section {
+  .section-container ul {
     position: relative;
-    padding: 0;
     padding-bottom: 60px;
   }
 
-  section.inline {
+  .section-container .container {
+    width: 100%;
+  }
+
+  .section-container .container.inline {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 
-  section img,
-  section .details {
+  .parlament-slider {
     width: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
   }
 
-  .section-container section .details {
+  .parlament-slider .slider-2 {
     position: static;
   }
 }

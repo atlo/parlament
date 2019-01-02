@@ -1,6 +1,8 @@
 var button
 
-function nextPage () {
+/* function nextPage (event) {
+  event.preventDefault()
+
   const parent = $(this).closest('section')
   const parentImage = parent.find('img')
   const parentDetails = parent.find('.details')
@@ -15,7 +17,9 @@ function nextPage () {
   nextPage.fadeIn()
 }
 
-function previousPage () {
+function previousPage (event) {
+  event.preventDefault()
+
   const parent = $(this).closest('section')
   const previousPage = parent.prev()
 
@@ -29,4 +33,22 @@ function previousPage () {
 $('.next-page').click(nextPage)
 $('.previous-page').click(previousPage)
 $('section').on('swipeleft', nextPage)
-$('section').on('swiperight', previousPage)
+$('section').on('swiperight', previousPage) */
+$('.slider-1').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-2',
+  infinite: false
+})
+
+$('.slider-2').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.slider-1',
+  infinite: false,
+  nextArrow: '<button type="button" class="slick-next">tovább</button>',
+  prevArrow: '<button type="button" class="slick-prev">vissza</button>'
+})
+
