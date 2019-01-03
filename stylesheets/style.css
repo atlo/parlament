@@ -92,7 +92,7 @@ h2 {
 }
 
 .slick-next {
-  right: 15px;
+  left: 130px;
   background: url('../images/next_page_arrow.svg') center right no-repeat;
   padding-right: 30px;
 }
@@ -202,5 +202,10 @@ footer img {
 
   .parlament-slider .slider-2 {
     position: static;
+  }
+
+  .slick-next {
+    left: auto;
+    right: 15px;
   }
 }
