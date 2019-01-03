@@ -74,7 +74,8 @@ h2 {
 .slick-prev,
 .slick-next {
   position: absolute;
-  bottom: -5px;
+  z-index: 1;
+  bottom: 0;
   border: 0;
   background: transparent;
   color: #cdcdcd;
@@ -101,16 +102,19 @@ h2 {
   display: none !important;
 }
 
+.slider-2 .slick-slide {
+  height: 435px;
+}
+
+.slider-1 .slick-slide img {
+  width: inherit;
+}
+
 .parlament-slider {
   width: 50%;
   padding-left: 15px;
   padding-right: 15px;
 }
-
-/* .parlament-slider p {
-  display: flex;
-  align-items: center;
-} */
 
 .parlament-slider p strong {
   padding-left: 5px;
@@ -207,5 +211,9 @@ footer img {
   .slick-next {
     left: auto;
     right: 15px;
+  }
+
+  .slider-2 .slick-slide {
+    height: 100%;
   }
 }
