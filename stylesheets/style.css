@@ -74,7 +74,6 @@ h2 {
 .slick-prev,
 .slick-next {
   position: absolute;
-  z-index: 1;
   bottom: 0;
   border: 0;
   background: transparent;
