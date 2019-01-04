@@ -116,6 +116,11 @@ h2 {
   padding-right: 15px;
 }
 
+.parlament-slider p {
+  display: flex;
+  align-items: center;
+}
+
 .parlament-slider p strong {
   padding-left: 5px;
 }
