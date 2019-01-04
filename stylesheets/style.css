@@ -187,6 +187,11 @@ footer img {
   display: inline-block;
 }
 
+.slider-1 .slick-prev,
+.slider-1 .slick-next {
+  display: none !important;
+}
+
 @media (max-width: 1200px) {
   .section-container ul {
     position: relative;
@@ -208,6 +213,10 @@ footer img {
     padding-right: 2.5%;
   }
 
+  .parlament-slider p:first-of-type {
+    display: none;
+  }
+
   .parlament-slider .slider-2 {
     position: static;
   }
@@ -219,5 +228,19 @@ footer img {
 
   .slider-2 .slick-slide {
     height: 100%;
+  }
+
+  .slider-1 .slick-prev,
+  .slider-1 .slick-next {
+    display: block !important;
+  }
+
+  .slider-2 .slick-prev,
+  .slider-2 .slick-next {
+    display: none !important;
+  }
+
+  .parlament-slider.slider-2 {
+    padding-bottom: 0;
   }
 }
