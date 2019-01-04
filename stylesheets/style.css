@@ -213,7 +213,7 @@ footer img {
     padding-right: 2.5%;
   }
 
-  .parlament-slider p:first-of-type {
+  .parlament-slider .description {
     display: none;
   }
 
