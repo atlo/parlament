@@ -74,7 +74,8 @@ h2 {
 .slick-prev,
 .slick-next {
   position: absolute;
-  bottom: 0;
+  z-index: 1;
+  bottom: 80px;
   border: 0;
   background: transparent;
   color: #cdcdcd;
@@ -233,6 +234,7 @@ footer img {
   .slider-1 .slick-prev,
   .slider-1 .slick-next {
     display: block !important;
+    bottom: 0;
   }
 
   .slider-2 .slick-prev,
